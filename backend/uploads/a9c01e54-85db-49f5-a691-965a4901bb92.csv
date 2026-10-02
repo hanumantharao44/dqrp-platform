@@ -1,0 +1,5 @@
+txn_ref,account_id,amount,currency,txn_date
+T001,ACC1,100.5,USD,01-09-2026
+T002,ACC2,-5,USD,01-09-2026
+T003,ACC3,75,XXX,01-01-2031
+T008,ACC1,100.5,USD,01-09-2026

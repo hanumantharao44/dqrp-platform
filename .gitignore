@@ -1,0 +1,28 @@
+# Frontend
+node_modules/
+build/
+dist/
+.env
+.env.local
+
+# Backend (Java)
+target/
+*.class
+*.jar
+*.log
+.gradle/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Secrets
+application-local.properties
+application-*.properties
+!application-example.properties
+.env
