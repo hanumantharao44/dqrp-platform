@@ -54,7 +54,7 @@ public class ChunkService {
             WHERE id = ?""", counts.valid(), counts.invalid(), counts.duplicate(), batchId);
 
         Integer remaining = jdbc.queryForObject(
-                "SELECT count(*) FROM batch_chunk WHERE batch_id = ? AND status <> 'DONE'",
+                "SELECT count(*) FROM batch_chunk WHERE batch_id = ? AND status NOT IN ('DONE','DEAD_LETTERED')",
                 Integer.class, batchId);
 
         if (remaining != null && remaining == 0) {
